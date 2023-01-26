@@ -3,7 +3,7 @@
 //  Исходные данные - массив products.
 // Необходимо отсортировать массив products используя метод sort по цене, начиная с самой маленькой,
 //  заканчивая самой большой ценой, после чего вывести отсортированный массив в консоль.
-const products1 = [
+const products = [
   {
     id: 3,
     price: 127,
@@ -26,10 +26,10 @@ const products1 = [
 ];
 //фильтр:
 console.log(
-  products1.filter((Object) => "photos" in Object && Object.photos.length !== 0)
+  products.filter((Object) => "photos" in Object && Object.photos.length !== 0)
 );
 //сортировка:
-products1.sort(function (a, b) {
+products.sort(function (a, b) {
   return a.price - b.price;
 });
-console.log(products1);
+console.log(products);
